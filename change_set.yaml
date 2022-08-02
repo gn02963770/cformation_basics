@@ -1,0 +1,9 @@
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-0cff7528ff583bf9a
+      Tags:
+        - Key: "Name"
+          Value: !Join ["-", ["change1"]]
